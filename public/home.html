@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+</head>
+<body>
+    <header>
+        <h1><span id="styletrack">Track </span><span id="styleh2">your job Application seamlessly</span></h1>
+    </header>
+    <div class="welcome-heading">
+            <h1 id="display-welcome"></h1>
+            <button class="btn btn-info" id="logout" onclick="logout()">Logout</button>
+    </div>
+    <main class="container-sm">
+        <section class="profile" id="profile">
+            <h2>Profile statistics</h2>
+            <p id="candidate"></p>
+            <p id="applied"></p>
+            <p id="processing"></p>
+            <p id="rejected"></p>
+            <p id="totalApplications"></p>
+        </section>
+
+        <section class="track" id="track">
+            <h2>Appled for new job?</h2>
+            <h3>Create it's Track here</h3>
+            <form class="form" id="form">
+                <input class="form-control" type="text" name="CompanyName" id="CompanyName" placeholder="Company Name" autocomplete="off" required>
+                <input class="form-control" type="text" name="Role" id="Role" placeholder="Role" autocomplete="off">
+                <input class="form-control" type="text" name="JobLink" id="JobLink" placeholder="Applied link" autocomplete="off">
+                <input class="form-control" type="text" name="notes" id="Notes" placeholder="Ex: 1st Round On Next week">
+                <input class="form-control" type="date" name="AppliedDate" id="AppliedDate">
+                <input class="btn btn-info form-control" id="submit" type="submit" value="Add to Tracker">
+            </form>
+        </section>
+    </main>
+    <section>
+        <br>
+        <div class="container-sm">
+            <section>
+                <div>
+                    <h2>Wanna change Application tack?</h2>
+                </div>
+                <form class="d-flex cointainer col-sm-4">
+                    <input class="form-control me-2" id="search-bar" type="search" placeholder="Ex: zoho or software developer" aria-label="Search">
+                </form>
+            </section>        
+        </div>
+        <div class="container-sm">
+            <br>
+            <p class="load" id="loadjobs">Loading...</p>
+            <div class="row" id="ApplicationsList">
+                
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Application developed by <a href="https://www.github.com/ramprasad-13" target="_blank">Ramprasad</aa></p>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
