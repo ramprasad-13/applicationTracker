@@ -206,6 +206,8 @@ async function getjobs(){
             let url = `/search`
             const response = await fetch(url);
             jobs = await response.json();
+            let displayjobs=document.querySelector('.display-jobs')
+            displayjobs.style.visibility = jobs.length>0 ? "visible":"hidden"
             showJobs(jobs)
             showDetails()
         } catch (error) {
