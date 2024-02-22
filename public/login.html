@@ -65,7 +65,7 @@
                         loading.style.display = 'block';
     
                         const data = {email, password};
-                        let url = 'http://localhost:3000/login';
+                        let url = '/login';
                         let response = await fetch(url, {
                             method: 'POST',
                             credentials: 'include',
