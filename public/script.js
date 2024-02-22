@@ -23,7 +23,7 @@ let myID = getCookie('id');
 // myID=myID.slice(3,myID.length-1)
 console.log(myID)
 if(!(myID)){
-    window.location.href = "http://localhost:3000/login.html";
+    window.location.href = "/login.html";
 }
 
 async function showDetails(){
