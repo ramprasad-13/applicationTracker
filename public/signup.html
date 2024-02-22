@@ -64,7 +64,7 @@
                         loading.style.display = 'block';
     
                         const data = {username, email, password};
-                        let url = 'http://localhost:3000/register';
+                        let url = '/register';
                         let response = await fetch(url, {
                             method: 'POST',
                             credentials: 'include',
